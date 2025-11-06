@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>ensa Erste-Hilfe-Kurs Teens | RecoverMe GmbH | Mirco + Sibylle Deflorin</title>
+    <meta name="description" content="ensa teens: Jugendliche lernen Erste Hilfe für psychische Gesundheit zu leisten. Peer-to-Peer Unterstützung rettet Leben. RecoverMe GmbH - Mirco + Sibylle Deflorin">
+    <meta name="keywords" content="ensa teens, erste hilfe psychische gesundheit, jugendliche, peer support, RecoverMe, Mirco Deflorin, Sibylle Deflorin, mental health, schweiz, bern">
+    <meta name="author" content="Mirco Deflorin, Sibylle Deflorin, RecoverMe GmbH">
+    
+    <!-- Open Graph / LinkedIn Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://recoverme.github.io/ensa-Erste-Hilfe-Kurs-Teens1.html">
+    <meta property="og:title" content="ensa Erste-Hilfe-Kurs Teens | Jugendliche helfen Jugendlichen">
+    <meta property="og:description" content="Mit 18 hätte ich jemanden gebraucht, der die Warnsignale erkennt. Heute lehre ich Jugendliche genau das: Peer-to-Peer Unterstützung für psychische Gesundheit.">
+    <meta property="og:image" content="https://recoverme.github.io/bild-ensa.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ensa Erste-Hilfe-Kurs Teens | RecoverMe GmbH">
+    <meta name="twitter:description" content="Jugendliche lernen, Gleichaltrigen bei psychischen Problemen Erste Hilfe zu leisten.">
+    <meta name="twitter:image" content="https://recoverme.github.io/bild-ensa.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        
+        /* Hero Section mit Foto */
+        .hero {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0066B3 0%, #0077CC 50%, #00A9A3 100%);
+            display: flex;
+            align-items: center;
+            padding: 60px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .hero-container {
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            padding-right: 40px;
+        }
+        
+        .hero-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .opening {
+            font-size: 48px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.3;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .intro-text {
+            font-size: 28px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+        
+        .course-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: #FFB81C;
+            margin-bottom: 35px;
+            display: inline-block;
+        }
+        
+        .steps-container {
+            margin: 40px 0;
+        }
+        
+        .step {
+            font-size: 22px;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-weight: 500;
+        }
+        
+        .step::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #FFB81C;
+            font-weight: 700;
+            font-size: 28px;
+        }
+        
+        .tagline {
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin: 40px 0;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 18px 35px;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary {
+            background: #FFB81C;
+            color: #0066B3;
+        }
+        
+        .btn-primary:hover {
+            background: #FFA500;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        /* Info Section */
+        .info-section {
+            background: #FFFFFF;
+            padding: 80px 20px;
+        }
+        
+        .info-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .info-section h2 {
+            font-size: 40px;
+            color: #0066B3;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .info-section p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 25px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .info-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #00A9A3;
+        }
+        
+        .info-card h3 {
+            font-size: 24px;
+            color: #0066B3;
+            margin-bottom: 15px;
+        }
+        
+        .info-card p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        /* About Section */
+        .about-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 20px;
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-section h2 {
+            font-size: 40px;
+            color: #0066B3;
+            margin-bottom: 30px;
+        }
+        
+        .about-section p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 25px;
+        }
+        
+        .team-info {
+            margin-top: 50px;
+            padding: 40px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .team-names {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0066B3;
+            margin-bottom: 10px;
+        }
+        
+        .team-company {
+            font-size: 24px;
+            font-weight: 600;
+            color: #00A9A3;
+            margin-bottom: 10px;
+        }
+        
+        .team-credentials {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #0066B3;
+            color: #FFFFFF;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer a {
+            color: #FFB81C;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-content {
+                padding-right: 0;
+            }
+            
+            .opening {
+                font-size: 36px;
+            }
+            
+            .intro-text {
+                font-size: 24px;
+            }
+            
+            .course-title {
+                font-size: 28px;
+            }
+            
+            .step {
+                font-size: 18px;
+            }
+            
+            .tagline {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section mit Foto -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Text Links -->
+            <div class="hero-content">
+                <h1 class="opening">
+                    Mit 18 hätte ich jemanden gebraucht,<br>
+                    der die Warnsignale erkennt.
+                </h1>
+                
+                <p class="intro-text">
+                    Heute lehre ich Jugendliche genau das:
+                </p>
+                
+                <div class="course-title">
+                    🩹 ensa Erste-Hilfe-Kurs Teens
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step">Psychische Probleme bei Gleichaltrigen erkennen</div>
+                    <div class="step">Mut haben, das Thema anzusprechen</div>
+                    <div class="step">Erste Hilfe leisten, bis Erwachsene übernehmen</div>
+                </div>
+                
+                <p class="tagline">
+                    Peer-to-Peer Unterstützung rettet Leben.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <a href="https://www.recoverme.ch/kontakt" class="btn btn-primary">
+                        Kurs anfragen
+                    </a>
+                    <a href="https://ensa.swiss/de/ersthelfer/fokus-teens/" class="btn btn-secondary" target="_blank" rel="noopener">
+                        Mehr über ensa teens
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Foto Rechts -->
+            <div class="hero-image">
+                <!-- DEIN FOTO -->
+                <img src="bild-ensa.jpg" alt="Mirco Deflorin beim ensa Kurs in Bern">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="info-content">
+            <h2>Was ist ensa teens?</h2>
+            
+            <p>
+                Der <strong>ensa Erste-Hilfe-Kurs Teens</strong> richtet sich an Jugendliche zwischen 15-18 Jahren: 
+                Lernende, Schüler*innen, junge Sportler*innen und Jugendgruppen.
+            </p>
+            
+            <p>
+                Praxisnah lernen Teilnehmende, wie sie andere Jugendliche und junge Erwachsene bei 
+                psychischen Problemen und Krisen mit Erster Hilfe unterstützen können.
+            </p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🎯 Erkennen</h3>
+                    <p>Jugendliche lernen psychische Probleme und Warnsignale bei Gleichaltrigen zu erkennen.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>💬 Ansprechen</h3>
+                    <p>Sie entwickeln den Mut, das Thema offen anzusprechen und ihre Beobachtungen zu teilen.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🤝 Unterstützen</h3>
+                    <p>Sie lernen, Hilfe anzubieten und zu begleiten, bis eine erwachsene Person übernimmt.</p>
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-weight: 600; font-size: 22px; margin-top: 40px;">
+                Die Wirkung von ensa Erste-Hilfe-Kursen ist empirisch nachgewiesen.
+            </p>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Über uns</h2>
+            
+            <p>
+                Als jemand, der selbst <strong>20 Jahre mit Depression</strong> gelebt hat, weiß ich: 
+                Die Krisen im Erwachsenenalter beginnen oft in der Jugend.
+            </p>
+            
+            <p>
+                Mit 18 hätte ich jemanden gebraucht, der die Warnsignale erkennt. 
+                Jemanden, der mich anspricht. Jemanden, der nicht wegschaut.
+            </p>
+            
+            <p>
+                Heute geben wir Jugendlichen genau diese Werkzeuge – damit sie füreinander da sein können, 
+                bevor die Krise kommt.
+            </p>
+            
+            <div class="team-info">
+                <div class="team-names">Mirco + Sibylle Deflorin</div>
+                <div class="team-company">RecoverMe GmbH</div>
+                <div class="team-credentials">
+                    ensa-Kursleiter | Recovery- und Peer-Berater
+                </div>
+            </div>
+            
+            <div class="cta-buttons" style="margin-top: 50px; justify-content: center;">
+                <a href="https://www.recoverme.ch/kontakt" class="btn btn-primary">
+                    Kontakt aufnehmen
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            <strong>RecoverMe GmbH</strong> | Mirco + Sibylle Deflorin<br>
+            ensa-Kursleiter für Teens & Erwachsene<br><br>
+            <a href="https://www.recoverme.ch/kontakt">Kontakt</a> | 
+            <a href="https://ensa.swiss/de/ersthelfer/fokus-teens/" target="_blank" rel="noopener">ensa.swiss</a>
+        </p>
+        <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
+            © 2025 RecoverMe GmbH | Alle Rechte vorbehalten
+        </p>
+    </footer>
+</body>
+</html>
